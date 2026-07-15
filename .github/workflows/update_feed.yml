@@ -1,0 +1,40 @@
+name: Update EITM Podcast Feed
+
+on:
+  schedule:
+    # Runs every day at 18:00 UTC (2:00 PM EST - tweak as needed)
+    - cron: '0 18 * * *'
+  # Allows you to manually trigger the run from the Actions tab
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-feed:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+
+    - name: Install Google Chrome & Dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y google-chrome-stable
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Run Scraper Script
+      run: python scraper.py # Change this if your script has a different name
+
+    - name: Commit and Push changes
+      uses: stefanzweifel/git-auto-commit-action@v5
+      with:
+        commit_message: "Automated daily feed update"
+        file_pattern: "feed.xml"
