@@ -101,9 +101,11 @@ def main():
 
     # Add oldest-first; feedgen prepends by default, so the newest episode
     # ends up at the top of the feed.
+    newest_pubdate = None
     for episode in sorted(episodes, key=lambda e: parse_pubdate(e["fileName"], e["title"])):
         file_name = episode["fileName"]
         pubdate = parse_pubdate(file_name, episode["title"])
+        newest_pubdate = pubdate  # loop is oldest-first, so the last one is newest
         audio_url = AUDIO_BASE + file_name
 
         fe = fg.add_entry()
@@ -113,6 +115,12 @@ def main():
         fe.enclosure(audio_url, 0, "audio/mpeg")
         fe.pubDate(pubdate)
         fe.link(href=SITE_URL)
+
+    # Pin lastBuildDate to the newest episode instead of "now" so the file is
+    # deterministic: it only changes when a new episode appears. This keeps the
+    # frequent-polling schedule from committing a new feed.xml every single run.
+    if newest_pubdate is not None:
+        fg.lastBuildDate(newest_pubdate)
 
     fg.rss_file(OUTPUT_FILE, pretty=True)
     print(f"Wrote {OUTPUT_FILE}")

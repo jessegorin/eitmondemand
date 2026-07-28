@@ -2,10 +2,21 @@ name: Update EITM Podcast Feed
 
 on:
   schedule:
-    # Runs every day at 18:00 UTC (2:00 PM EST - tweak as needed)
-    - cron: '0 18 * * *'
+    # Poll every 5 minutes from 8:00 AM to ~6:00 PM Pacific.
+    # GitHub cron is UTC and does NOT observe daylight saving, so these hours
+    # are set for PDT (UTC-7, summer). In winter (PST, UTC-8) they will fire
+    # one hour later in local time — shift the hour range back by 1 at the
+    # November DST change if you want to keep it at 8 AM Pacific.
+    # 15:00-23:55 UTC + 00:00-00:55 UTC = 8:00 AM - 5:55 PM PDT.
+    - cron: '*/5 15-23,0 * * *'
   # Allows you to manually trigger the run from the Actions tab
   workflow_dispatch:
+
+# Never let two runs push at the same time (this was the non-fast-forward
+# failure). Queue overlapping runs instead of racing them.
+concurrency:
+  group: update-feed
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -17,21 +28,41 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
+      with:
+        # Full history so we can read when feed.xml was last committed.
+        fetch-depth: 0
+
+    - name: Skip if feed already updated today (Pacific)
+      id: guard
+      run: |
+        LAST=$(TZ=America/Los_Angeles git log -1 --format=%cd --date=format-local:%Y-%m-%d -- feed.xml)
+        TODAY=$(TZ=America/Los_Angeles date +%Y-%m-%d)
+        echo "Last feed.xml commit (Pacific): ${LAST:-none} | Today (Pacific): $TODAY"
+        if [ "$LAST" = "$TODAY" ]; then
+          echo "Today's entry is already committed - skipping this run."
+          echo "skip=true" >> "$GITHUB_OUTPUT"
+        else
+          echo "skip=false" >> "$GITHUB_OUTPUT"
+        fi
 
     - name: Set up Python
+      if: steps.guard.outputs.skip != 'true'
       uses: actions/setup-python@v5
       with:
         python-version: '3.10'
 
     - name: Install dependencies
+      if: steps.guard.outputs.skip != 'true'
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
     - name: Run Scraper Script
+      if: steps.guard.outputs.skip != 'true'
       run: python scraper.py
 
     - name: Commit and Push changes
+      if: steps.guard.outputs.skip != 'true'
       uses: stefanzweifel/git-auto-commit-action@v5
       with:
         commit_message: "Automated daily feed update"
