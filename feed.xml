@@ -12,13 +12,23 @@
       <link>https://www.eitmondemand.com/</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Thu, 30 Jul 2026 05:45:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 31 Jul 2026 05:45:00 +0000</lastBuildDate>
     <itunes:category text="Comedy"/>
     <itunes:explicit>no</itunes:explicit>
     <item>
+      <title>Elliot on Demand — Fri Jul 31 2026</title>
+      <link>https://www.eitmondemand.com/</link>
+      <description>Elliot on Demand — episode for Fri Jul 31 2026.</description>
+      <guid isPermaLink="false">https://d2bso5f73cpfun.cloudfront.net/2026-07-31T05:45:00.mp3</guid>
+      <enclosure url="https://d2bso5f73cpfun.cloudfront.net/2026-07-31T05:45:00.mp3" length="0" type="audio/mpeg"/>
+      <pubDate>Fri, 31 Jul 2026 05:45:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Elliot on Demand — Thu Jul 30 2026</title>
       <link>https://www.eitmondemand.com/</link>
-      <description>Elliot on Demand — episode for Thu Jul 30 2026.</description>
+      <description>• EITM: Pained Ankles 7/30/26 — Tag! You're lit!
+• EITM: Same-Day TiePie 7/30/26 — Don't have to imagine that.
+• EITM: Gen Con Indy 7/30/26 — The Home of Tabletop Gaming™.</description>
       <guid isPermaLink="false">https://d2bso5f73cpfun.cloudfront.net/2026-07-30T05:45:00.mp3</guid>
       <enclosure url="https://d2bso5f73cpfun.cloudfront.net/2026-07-30T05:45:00.mp3" length="0" type="audio/mpeg"/>
       <pubDate>Thu, 30 Jul 2026 05:45:00 +0000</pubDate>
