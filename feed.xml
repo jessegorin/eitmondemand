@@ -12,13 +12,23 @@
       <link>https://www.eitmondemand.com/</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Mon, 10 Aug 2026 05:45:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 11 Aug 2026 05:45:00 +0000</lastBuildDate>
     <itunes:category text="Comedy"/>
     <itunes:explicit>no</itunes:explicit>
     <item>
+      <title>Elliot on Demand — Tue Aug 11 2026</title>
+      <link>https://www.eitmondemand.com/</link>
+      <description>Elliot on Demand — episode for Tue Aug 11 2026.</description>
+      <guid isPermaLink="false">https://d2bso5f73cpfun.cloudfront.net/2026-08-11T05:45:00.mp3</guid>
+      <enclosure url="https://d2bso5f73cpfun.cloudfront.net/2026-08-11T05:45:00.mp3" length="0" type="audio/mpeg"/>
+      <pubDate>Tue, 11 Aug 2026 05:45:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Elliot on Demand — Mon Aug 10 2026</title>
       <link>https://www.eitmondemand.com/</link>
-      <description>Elliot on Demand — episode for Mon Aug 10 2026.</description>
+      <description>• EITM: Marching Band 8/10/26 — Give it a parade rest?
+• EITM: Elliot's Mystery Dinner 8/10/26 — Not a murder mystery dinner, although it does sound like they murdered some food.
+• EITM: Lost, Found, And Bound 8/10/26 — Holy scrap!</description>
       <guid isPermaLink="false">https://d2bso5f73cpfun.cloudfront.net/2026-08-10T05:45:00.mp3</guid>
       <enclosure url="https://d2bso5f73cpfun.cloudfront.net/2026-08-10T05:45:00.mp3" length="0" type="audio/mpeg"/>
       <pubDate>Mon, 10 Aug 2026 05:45:00 +0000</pubDate>
