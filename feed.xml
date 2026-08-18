@@ -12,13 +12,23 @@
       <link>https://www.eitmondemand.com/</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Mon, 17 Aug 2026 05:45:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 18 Aug 2026 05:45:00 +0000</lastBuildDate>
     <itunes:category text="Comedy"/>
     <itunes:explicit>no</itunes:explicit>
     <item>
+      <title>Elliot on Demand — Tue Aug 18 2026</title>
+      <link>https://www.eitmondemand.com/</link>
+      <description>Elliot on Demand — episode for Tue Aug 18 2026.</description>
+      <guid isPermaLink="false">https://d2bso5f73cpfun.cloudfront.net/2026-08-18T05:45:00.mp3</guid>
+      <enclosure url="https://d2bso5f73cpfun.cloudfront.net/2026-08-18T05:45:00.mp3" length="0" type="audio/mpeg"/>
+      <pubDate>Tue, 18 Aug 2026 05:45:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Elliot on Demand — Mon Aug 17 2026</title>
       <link>https://www.eitmondemand.com/</link>
-      <description>Elliot on Demand — episode for Mon Aug 17 2026.</description>
+      <description>• EITM: It's Cobblin' Time 8/17/26 — Kicking (punching) and screaming.
+• EITM: Acrylic Tick 8/17/26 — Happy work anniversary, Krysten!
+• EITM: Itsy Bitsy Teenie Weenie Yellow Polka-TOOT 8/17/26 — ...bikini.</description>
       <guid isPermaLink="false">https://d2bso5f73cpfun.cloudfront.net/2026-08-17T05:45:00.mp3</guid>
       <enclosure url="https://d2bso5f73cpfun.cloudfront.net/2026-08-17T05:45:00.mp3" length="0" type="audio/mpeg"/>
       <pubDate>Mon, 17 Aug 2026 05:45:00 +0000</pubDate>
