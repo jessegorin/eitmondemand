@@ -12,13 +12,23 @@
       <link>https://www.eitmondemand.com/</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Thu, 03 Sep 2026 05:45:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 04 Sep 2026 05:45:00 +0000</lastBuildDate>
     <itunes:category text="Comedy"/>
     <itunes:explicit>no</itunes:explicit>
     <item>
+      <title>Elliot on Demand — Fri Sep 04 2026</title>
+      <link>https://www.eitmondemand.com/</link>
+      <description>Elliot on Demand — episode for Fri Sep 04 2026.</description>
+      <guid isPermaLink="false">https://d2bso5f73cpfun.cloudfront.net/2026-09-04T05:45:00.mp3</guid>
+      <enclosure url="https://d2bso5f73cpfun.cloudfront.net/2026-09-04T05:45:00.mp3" length="0" type="audio/mpeg"/>
+      <pubDate>Fri, 04 Sep 2026 05:45:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Elliot on Demand — Thu Sep 03 2026</title>
       <link>https://www.eitmondemand.com/</link>
-      <description>Elliot on Demand — episode for Thu Sep 03 2026.</description>
+      <description>• EITM: Neal Augenstein &amp; Lauryn Ricketts 9/3/26 — Are they off the list?
+• EITM: Petersburg FIRE! 9/3/26 — To the best of his ability.
+• EITM: On The Scent 9/3/26 — Passing the sniff test.</description>
       <guid isPermaLink="false">https://d2bso5f73cpfun.cloudfront.net/2026-09-03T05:45:00.mp3</guid>
       <enclosure url="https://d2bso5f73cpfun.cloudfront.net/2026-09-03T05:45:00.mp3" length="0" type="audio/mpeg"/>
       <pubDate>Thu, 03 Sep 2026 05:45:00 +0000</pubDate>
