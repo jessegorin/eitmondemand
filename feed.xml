@@ -12,9 +12,17 @@
       <link>https://www.eitmondemand.com/</link>
     </image>
     <language>en</language>
-    <lastBuildDate>Mon, 02 Nov 2026 05:45:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 05:45:00 +0000</lastBuildDate>
     <itunes:category text="Comedy"/>
     <itunes:explicit>no</itunes:explicit>
+    <item>
+      <title>Elliot on Demand — Tue Nov 03 2026</title>
+      <link>https://www.eitmondemand.com/</link>
+      <description>Elliot on Demand — episode for Tue Nov 03 2026.</description>
+      <guid isPermaLink="false">https://d2bso5f73cpfun.cloudfront.net/2026-11-03T05:45:00.mp3</guid>
+      <enclosure url="https://d2bso5f73cpfun.cloudfront.net/2026-11-03T05:45:00.mp3" length="0" type="audio/mpeg"/>
+      <pubDate>Tue, 03 Nov 2026 05:45:00 +0000</pubDate>
+    </item>
     <item>
       <title>Elliot on Demand — Mon Nov 02 2026</title>
       <link>https://www.eitmondemand.com/</link>
